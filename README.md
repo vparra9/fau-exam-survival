@@ -1,4 +1,4 @@
-# FAU EXAM SURVIVAL
+# FAU-EXAM-SURVIVAL-README
 Overview:
 FAU Exam Survival is a web application that generates structured, exam-specific study plans for FAU students. Instead of generic AI responses, this tool creates a personalized survival plan based on:
   * The exact units on the exam
