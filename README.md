@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FAU-EXAM-SURVIVAL-README
+Overview:
+FAU Exam Survival is a web application that generates structured, exam-specific study plans for FAU students. Instead of generic AI responses, this tool creates a personalized survival plan based on:
+  * The exact units on the exam
+  * The number of days available
+  * The student's available study hours
+The system ensures that 100% of exam content is covered, distributed proportionally across the time available. 
 
-## Getting Started
+Core Concept:
+The study plan engine works as follows:
+  1. User selects which units are on the exam.
+  2. The selected units represent 100% of the exam scope.
+  3. The total available study time is calculated.
+  4. Each unit is assigned a percentage of effort.
+  5. That effort is distributed across the exact number of study days.
+This ensures:
+  * No arbitrary 10-day template
+  * No under-coverage
+  * No wasted time
+  * Full exam scope coverage
 
-First, run the development server:
+MVP Scope
+Version 1 includes
+  * Single course: FAU Chemistry I
+  * Manual syllabus unit structure
+  * Unit selection checklist
+  * Exam date input
+  * Hours per week input
+  * Dynamic study plan generation
+Not included in MVP
+  * Chat assistant
+  * Document uploads
+  * Stripe payments
+  * Multi-course support
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tech Stack
+  * Next.js (App Router)
+  * Tailwind CSS
+  * GitHub Codespaces
+  * Supabase
+  * OpenAI API
+  * Stripe
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Current Status
+  * Project scaffolded
+  * Homepage built
+  * Setup page built
+  * Navigation flow working
+  * Plan engine logic defined 
