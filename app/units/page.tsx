@@ -26,6 +26,7 @@ const CHEM_UNITS = [
 //Create Units page and have it access examDate and hours
 export default function UnitsPage() {
     const searchParams = useSearchParams();
+    const router = useRouter();
 
     //Read examDate and hours
     const examDate = searchParams.get("examDate");
@@ -60,6 +61,17 @@ export default function UnitsPage() {
                     </label>
                 </div>
             ))}
+            
+            <button
+                onClick={() =>
+                    router.push(
+                        `/plan?examDate=${examDate}&hours=${hours}&units=${encodeURIComponent(JSON.stringify(selectedUnits)
+                        )}`
+                    )
+                }
+                >
+                    Generate Plan
+                </button>
         </div>
     );
 }
