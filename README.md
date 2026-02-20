@@ -46,4 +46,18 @@ Current Status
   * Homepage built
   * Setup page built
   * Navigation flow working
-  * Plan engine logic defined 
+  * Plan engine logic defined
+  * Units selection page implemented
+  * Dynamic checkbox selection working
+  * URL parameter flow confirmed (examDate and hours)
+  * Toggle logic completed
+  * Plan page pending implementation
+
+## Dev Log
+Day 1:
+- Set up Next.js project
+- Built Setup page
+Day 2:
+- Implemented Units page with dynamic state
+- Implemented toggle logic using includes + filter
+- Debugged JSX and function scoping issues
